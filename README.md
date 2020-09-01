@@ -1,2 +1,2 @@
 # Algorithmic-Toolbox
-Mu solutions for Algorithmic Toolbox course
+My solutions for Algorithmic Toolbox course
