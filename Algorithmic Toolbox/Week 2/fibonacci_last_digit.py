@@ -1,0 +1,23 @@
+# Uses python3
+
+def get_fibonacci_last_digit(n):
+    if n <= 1:
+        return n
+
+    previous = 0
+    current  = 1
+
+    for _ in range(n - 1):    
+        previous, current = current, previous + current
+        
+        if previous >= 10:
+            previous = previous % 10
+        if current >= 10:
+            current = current % 10
+
+    return current 
+       
+
+if __name__ == '__main__':
+    n = int(input())
+    print(get_fibonacci_last_digit(n))
